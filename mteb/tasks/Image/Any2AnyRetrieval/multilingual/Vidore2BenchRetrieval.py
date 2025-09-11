@@ -341,8 +341,8 @@ class KoVidoreMIRRetrieval(AbsTaskAny2AnyRetrieval):
         description="Retrieve associated pages according to questions.",
         reference="https://arxiv.org/pdf/2407.01449",
         dataset={
-            "path": "whybe-choi/kovidore-mir-v0.1-beir-subsampled",
-            "revision": "c0f4cf7970279163027f2e99f60b042ab3dfa8e1",
+            "path": "whybe-choi/kovidore-mir-v1.0-beir",
+            "revision": "8a69ee34933fa2fb32ee5a20b1f537e99a22529f",
         },
         type="DocumentUnderstanding",
         category="t2i",
@@ -366,13 +366,13 @@ class KoVidoreMIRRetrieval(AbsTaskAny2AnyRetrieval):
 }
 """,
         prompt={"query": "Find a screenshot that relevant to the user's question."}, # TODO: Is this prompt correct?
-        descriptive_stats={ # TODO: Update this stats
+        descriptive_stats={
             "n_samples": None,
             "avg_character_length": {
                 "test": {
                     "average_document_length": 1.0,
-                    "num_documents": 27,
-                    "num_queries": 640,
+                    "num_documents": 1366,
+                    "num_queries": 1496,
                     "average_relevant_docs_per_query": 1.0,
                 }
             },
@@ -400,7 +400,7 @@ class KoVidoreVQARetrieval(AbsTaskAny2AnyRetrieval):
         description="Retrieve associated pages according to questions.",
         reference="https://arxiv.org/pdf/2407.01449",
         dataset={
-            "path": "whybe-choi/kovidore-vqa-v0.2-beir-subsampled",
+            "path": "whybe-choi/kovidore-vqa-v1.0-beir",
             "revision": "65771fa2bdd649c77faaab1b67378d5a782ae547",
         },
         type="DocumentUnderstanding",
@@ -425,13 +425,13 @@ class KoVidoreVQARetrieval(AbsTaskAny2AnyRetrieval):
 }
 """,
         prompt={"query": "Find a screenshot that relevant to the user's question."}, # TODO: Is this prompt correct?
-        descriptive_stats={ # TODO: Update this stats
+        descriptive_stats={
             "n_samples": None,
             "avg_character_length": {
                 "test": {
                     "average_document_length": 1.0,
-                    "num_documents": 27,
-                    "num_queries": 640,
+                    "num_documents": 1101,
+                    "num_queries": 1500,
                     "average_relevant_docs_per_query": 1.0,
                 }
             },
@@ -457,7 +457,7 @@ class KoVidoreSlideRetrieval(AbsTaskAny2AnyRetrieval):
         description="Retrieve associated pages according to questions.",
         reference="https://arxiv.org/pdf/2407.01449",
         dataset={
-            "path": "whybe-choi/kovidore-slide-v0.1-beir-subsampled",
+            "path": "whybe-choi/kovidore-slide-v1.0-beir",
             "revision": "6d6c1727766d44434bb4a026724adbab67b41001",
         },
         type="DocumentUnderstanding",
@@ -482,14 +482,14 @@ class KoVidoreSlideRetrieval(AbsTaskAny2AnyRetrieval):
 }
 """,
         prompt={"query": "Find a screenshot that relevant to the user's question."}, # TODO: Is this prompt correct?
-        descriptive_stats={ # TODO: Update this stats
+        descriptive_stats={
             "n_samples": None,
             "avg_character_length": {
                 "test": {
                     "average_document_length": 1.0,
-                    "num_documents": 27,
-                    "num_queries": 640,
-                    "average_relevant_docs_per_query": 1.0,
+                    "num_documents": 1415,
+                    "num_queries": 180,
+                    "average_relevant_docs_per_query": 1.2444,
                 }
             },
         },
@@ -514,8 +514,8 @@ class KoVidoreOfficeRetrieval(AbsTaskAny2AnyRetrieval):
         description="Retrieve associated pages according to questions.",
         reference="https://arxiv.org/pdf/2407.01449",
         dataset={
-            "path": "whybe-choi/kovidore-office-v0.1-beir-subsampled",
-            "revision": "7553ebdd0e1df4ad6b78f1cb564277e9bafed727",
+            "path": "whybe-choi/kovidore-office-v1.0-beir",
+            "revision": "00faa811db01ab3dd1e5121fe60c85790aa93f42",
         },
         type="DocumentUnderstanding",
         category="t2i",
@@ -539,14 +539,14 @@ class KoVidoreOfficeRetrieval(AbsTaskAny2AnyRetrieval):
 }
 """,
         prompt={"query": "Find a screenshot that relevant to the user's question."}, # TODO: Is this prompt correct?
-        descriptive_stats={ # TODO: Update this stats
+        descriptive_stats={
             "n_samples": None,
             "avg_character_length": {
                 "test": {
                     "average_document_length": 1.0,
-                    "num_documents": 27,
-                    "num_queries": 640,
-                    "average_relevant_docs_per_query": 1.0,
+                    "num_documents": 1993,
+                    "num_queries": 222,
+                    "average_relevant_docs_per_query": 1.0991,
                 }
             },
         },
@@ -571,8 +571,8 @@ class KoVidoreFinOCRRetrieval(AbsTaskAny2AnyRetrieval):
         description="Retrieve associated pages according to questions.",
         reference="https://arxiv.org/pdf/2407.01449",
         dataset={
-            "path": "whybe-choi/kovidore-finocr-v0.2-beir-subsampled",
-            "revision": "fcc9cd95812ed6687e293cbdd20f4f45fdc85a59",
+            "path": "whybe-choi/kovidore-finocr-v1.0-beir",
+            "revision": "0959e3bed492ecac92391ae01cbab1cd73725d28",
         },
         type="DocumentUnderstanding",
         category="t2i",
@@ -596,13 +596,13 @@ class KoVidoreFinOCRRetrieval(AbsTaskAny2AnyRetrieval):
 }
 """,
         prompt={"query": "Find a screenshot that relevant to the user's question."}, # TODO: Is this prompt correct?
-        descriptive_stats={ # TODO: Update this stats
+        descriptive_stats={
             "n_samples": None,
             "avg_character_length": {
                 "test": {
                     "average_document_length": 1.0,
-                    "num_documents": 27,
-                    "num_queries": 640,
+                    "num_documents": 2000,
+                    "num_queries": 187,
                     "average_relevant_docs_per_query": 1.0,
                 }
             },
