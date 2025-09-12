@@ -602,7 +602,7 @@ class KoVidoreFinOCRRetrieval(AbsTaskAny2AnyRetrieval):
                 "test": {
                     "average_document_length": 1.0,
                     "num_documents": 2000,
-                    "num_queries": 187,
+                    "num_queries": 198,
                     "average_relevant_docs_per_query": 1.0,
                 }
             },
