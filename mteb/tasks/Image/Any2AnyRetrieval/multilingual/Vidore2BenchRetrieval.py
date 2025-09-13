@@ -572,7 +572,7 @@ class KoVidoreFinOCRRetrieval(AbsTaskAny2AnyRetrieval):
         reference="https://arxiv.org/pdf/2407.01449",
         dataset={
             "path": "whybe-choi/kovidore-finocr-v1.0-beir",
-            "revision": "0959e3bed492ecac92391ae01cbab1cd73725d28",
+            "revision": "7bb3aa802bba49f167696ffd9fbb669ad2133092",
         },
         type="DocumentUnderstanding",
         category="t2i",
@@ -602,7 +602,7 @@ class KoVidoreFinOCRRetrieval(AbsTaskAny2AnyRetrieval):
                 "test": {
                     "average_document_length": 1.0,
                     "num_documents": 2000,
-                    "num_queries": 187,
+                    "num_queries": 198,
                     "average_relevant_docs_per_query": 1.0,
                 }
             },
